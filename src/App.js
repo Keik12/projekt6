@@ -39,36 +39,34 @@ const App = () => {
     <>
       <Header />
       <div className="container">
-        <form onSubmit={handleOnSubmit}>
-          <div className="wrapper">
-            <label htmlFor="amountValue">Kwota</label>
-            <input
-              name="amountValue"
-              className="amount-value"
-              id="amountValue"
-              type="number"
-              placeholder="Wprowadź kwotę"
-            />
-          </div>
-          <div className="wrapper">
-            <select
-              name="chooseCurrency"
-              id="chooseCurrency"
-              className="choose-currency"
-            >
-              <option value="EUR">EUR</option>
-              <option value="USD">USD</option>
-              <option value="CHF">CHF</option>
-            </select>
-          </div>
+        <form className="exchange-form" onSubmit={handleOnSubmit}>
+          <label htmlFor="amountValue" className="amount">
+            Kwota
+          </label>
+          <input
+            name="amountValue"
+            className="amount-value"
+            id="amountValue"
+            type="number"
+            placeholder="Wprowadź kwotę"
+          />
+          <select
+            name="chooseCurrency"
+            id="chooseCurrency"
+            className="choose-currency"
+          >
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="CHF">CHF</option>
+          </select>
           <button className="count-result-btn" id="countResultBtn">
             Przelicz
           </button>
-          <span className="result-text">TO</span>
-          <span className="result-text" id="amountConverted">
+          <span className="result">TO</span>
+          <span className="result" id="amountConverted">
             &nbsp;{result}&nbsp;
           </span>
-          <span className="result-text">PLN</span>
+          <span className="result">PLN</span>
         </form>
         {error && <div className="error">{error}</div>}
       </div>

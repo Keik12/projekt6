@@ -1,42 +1,63 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .logo {
-  border: 2px solid;
-  margin: 20px auto;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
   text-align: center;
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .text-label {
-  border: 2px solid;
-  margin: 20px auto;
-  width: 1000px;
-  height: 50px;
-  padding: 10px;
   text-align: center;
-  font-size: 48px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
+.exchange-form {
+  margin-bottom: 20px;
 }
 
-.form {
-  height: 100px;
-  width: 400px;
-  border: 2px solid black;
-}
-.details {
-  height: 400px;
-  width: 400px;
-  border: 2px solid black;
-  position: relative;
+.amount {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
-.summary {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.amount-value,
+.choose-currency {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.count-result-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.count-result-btn:hover {
+  background-color: #45a049;
+}
+
+.result {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
 }
