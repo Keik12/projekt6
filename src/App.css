@@ -19,16 +19,15 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
+  display: block;
 }
 
 .exchange-form {
   margin-bottom: 20px;
 }
 
-.amount {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
+.currency {
+  margin-top: 20px;
 }
 
 .amount-value,
@@ -37,6 +36,10 @@
   padding: 10px;
   border-radius: 3px;
   border: 1px solid #ccc;
+}
+
+.amount-value {
+  box-sizing: border-box;
 }
 
 .count-result-btn {
@@ -50,6 +53,7 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  margin: 24px 0;
 }
 
 .count-result-btn:hover {
@@ -60,4 +64,13 @@
   text-align: center;
   font-size: 20px;
   font-weight: bold;
+}
+
+.error {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: bold;
+  color: red;
 }

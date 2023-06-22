@@ -18,7 +18,7 @@ const App = () => {
       return;
     }
 
-    fetch(`http://api.nbp.pl/api/exchangerates/rates/A/${currency}`)
+    fetch(`https://api.nbp.pl/api/exchangerates/rates/A/${currency}`)
       .then((response) => response.json())
       .then((data) => {
         const rates = data.rates?.[0]?.mid;
@@ -40,7 +40,7 @@ const App = () => {
       <Header />
       <div className="container">
         <form className="exchange-form" onSubmit={handleOnSubmit}>
-          <label htmlFor="amountValue" className="amount">
+          <label htmlFor="amountValue" className="text-label">
             Kwota
           </label>
           <input
@@ -50,6 +50,9 @@ const App = () => {
             type="number"
             placeholder="Wprowadź kwotę"
           />
+          <label className="text-label currency" htmlFor="chooseCurrency">
+            Waluta
+          </label>
           <select
             name="chooseCurrency"
             id="chooseCurrency"
