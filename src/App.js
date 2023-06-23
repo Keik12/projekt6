@@ -48,7 +48,8 @@ const App = () => {
             className="amount-value"
             id="amountValue"
             type="number"
-            placeholder="Wprowadź kwotę"
+            step="0.01"
+            placeolder="Wprowadź kwotę"
           />
           <label className="text-label currency" htmlFor="chooseCurrency">
             Waluta
